@@ -126,38 +126,31 @@
         <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/nao-consegue-utilizar" target="_blank">Reclamar não consegue utilizar</a></li>
     </ul>
 </div>
-   <div class="texto-bottom">
-    <p class="texto2">"O maior erro é supor ao invés de perguntar".</p>
-    <p class="texto3">- Ronny Faustino</p>
-</div>
-<script>
-    // Array de frases
-    const frases = [
-        "A vida é como uma bicicleta, para manter o equilíbrio, você deve continuar se movendo.",
-        "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
-        "A criatividade é a inteligência se divertindo.",
-        "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
-        "O conhecimento é o único tesouro que não pode ser roubado."
-    ];
+<div class="texto-bottom">
+        <p class="texto2">"O maior erro é supor ao invés de perguntar".</p>
+        <p class="texto3">- Ronny Faustino</p>
+    </div>
+    <script>
+        var frases = [
+            "O maior erro é supor ao invés de perguntar",
+            "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
+            "Esse site apenas foi feito graças a ajuda de Gabriel Domingos",
+            "O conhecimento é o único tesouro que não pode ser roubado.",
+            "A criatividade é a inteligência se divertindo.",
+            "O sucesso é a soma de pequenos esforços repetidos dia após dia."
+        ];
 
-    // Função para escolher uma frase aleatória
-    function escolherFraseAleatoria() {
-        const indiceAleatorio = Math.floor(Math.random() * frases.length);
-        return frases[indiceAleatorio];
-    }
+        // Função para escolher uma frase aleatória do array
+        function escolherFraseAleatoria() {
+            var indice = Math.floor(Math.random() * frases.length);
+            return frases[indice];
+        }
 
-    // Atualiza a frase a cada 5 segundos
-    function atualizarFraseAutomaticamente() {
-        const elementoFrase = document.getElementById("frase-dinamica");
-        setInterval(function () {
-            elementoFrase.textContent = `"${escolherFraseAleatoria()}"`;
-        }, 5000); // 5000 milissegundos = 5 segundos
-    }
+        // Obtenha o elemento da frase dinâmica
+        var fraseDinamica = document.querySelector(".texto2");
 
-    // Chama a função para atualizar a frase automaticamente quando a página carregar
-    window.addEventListener("load", () => {
-        atualizarFraseAutomaticamente();
-    });
-</script>
+        // Altere o conteúdo do elemento para uma frase aleatória
+        fraseDinamica.textContent = escolherFraseAleatoria();
+    </script>
 </body>
 </html>
