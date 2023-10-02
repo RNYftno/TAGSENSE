@@ -130,6 +130,31 @@
     <p class="texto2">"O maior erro é supor ao invés de perguntar".</p>
     <p class="texto3">- Ronny Faustino</p>
 </div>
+<script>
+    // Frases alternativas
+    const frases = [
+        "O maior erro é supor ao invés de perguntar",
+        "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
+        "A criatividade é a inteligência se divertindo.",
+        "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+        "O conhecimento é o único tesouro que não pode ser roubado.",
+    ];
+
+    // Função para escolher uma frase aleatória
+    function escolherFraseAleatoria() {
+        const indiceAleatorio = Math.floor(Math.random() * frases.length);
+        return frases[indiceAleatorio];
+    }
+
+    // Atualiza a frase no elemento com id "frase-dinamica"
+    function atualizarFrase() {
+        const elementoFrase = document.getElementById("frase-dinamica");
+        elementoFrase.textContent = `"${escolherFraseAleatoria()}"`;
+    }
+
+    // Chama a função para atualizar a frase quando a página carregar
+    atualizarFrase();
+</script>
 </body>
 </html>
 
