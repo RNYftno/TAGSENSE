@@ -1,19 +1,17 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TagSense 2.0</title>
-    <link rel="icon" href="	https://www.freepnglogos.com/uploads/logo-caixa-png/caixa-download-png-5.png" type="image/x-icon">
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/logo-caixa-png/caixa-download-png-5.png" type="image/x-icon">
     <style>
-
-
-
-
         body {
             font-family: "Cooper Black", Arial, sans-serif;
             font-size: 24px;
             text-align: center;
-            background-color:#005ca9; /* Cor de fundo do corpo */
-            color: 	#fa6705
+            background-color: #005ca9; /* Cor de fundo do corpo */
+            color: #fa6705;
         }
         a {
             text-decoration: none;
@@ -22,11 +20,11 @@
         a:hover {
             color: #fa6705; /* Cor dos links ao passar o mouse */
         }
-        ul {
-            list-style-type: none; /* Remove as bolinhas dos links não visitados */
+        .coluna {
+            width: 33.33%; /* Largura de cada coluna (1/3 do espaço disponível) */
+            float: left; /* Faz com que as colunas fiquem uma ao lado da outra */
+            text-align: left; /* Alinha o texto à esquerda dentro de cada coluna */
         }
-        
-        /* Estilos para diferentes partes do texto */
         .texto1 {
             font-family: "Arial Black", Times, serif;
             font-size: 32px;
@@ -42,36 +40,47 @@
             font-size: 24px;
             color: #c00505;
         }
-        .assinatura {
+        .lista-links {
+            font-family: "Arial", sans-serif;
+            font-size: 18px;
+            color: #0a0a0a;
+            margin-left: 30px; /* Adiciona um recuo à esquerda para parecer uma lista */
+        }
+        .imagem-superior-direita {
             position: absolute; /* Posição absoluta em relação ao corpo */
-            bottom: 10px; /* Distância da parte inferior */
+            top: 10px; /* Distância da parte superior */
             right: 10px; /* Distância da parte direita */
-            font-family: 'Allura', cursive;
-            font-size: 14px;
-            color: #3b3b3b;
         }
     </style>
 </head>
 <body>
     <h1>Bem-vindo ao TagSense 2.0</h1>
-   <img src="https://tag.caixaprepagos.com.br/caixa-global/image/logo_tagcaixa_agrupado_desk.png" alt="Minha Imagem" width="800">
-   <p></p>
-   <img src="https://www.freepnglogos.com/uploads/logo-caixa-png/caixa-download-png-5.png" alt="Minha Nova Imagem" width="300">
-   <p class="texto1">Clique nos links abaixo para visitar diferentes locais do Edusense e tirar suas duvidas:</p>
-    <ul>
-        <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/autorizacao-de-debito-automatico" target="_blank">Autorização de Debito Automático</a></li>
-        <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/debito-automatico-caixa-tag" target="_blank">Erros Debito Automático</a></li>
-        <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/cartao-de-credito-caixa-tag" target="_blank">Erros Cartão de Crédito</a></li>
-        <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/sobre-os-bloqueios-jv" target="_blank">Todos os Tipos De Bloqueios</a></li>
-        <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/validacao-de-seguranca-1" target="_blank">Validação de Segurança PF e PJ</a></li>
-        <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/parcelar-fatura-jv" target="_blank">Contato para Negociação de Débitos</a></li>
-        <!-- Adicione mais links conforme necessário -->
-    </ul>
+    <img src="https://tag.caixaprepagos.com.br/caixa-global/image/logo_tagcaixa_agrupado_desk.png" alt="Minha Imagem" width="800">
+    <img class="imagem-superior-direita" src="https://www.freepnglogos.com/uploads/logo-caixa-png/caixa-download-png-5.png" alt="Minha Nova Imagem" width="100">
+    <p class="texto1">Clique nos links abaixo para visitar diferentes locais do Edusense e tirar suas dúvidas:</p>
+    <div class="coluna">
+        <ul class="lista-links">
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/demandas-bss-jv" target="_blank">Todas Demandas do BSS</a></li>
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/sobre-os-bloqueios-jv" target="_blank">Todos os tipos de bloqueios</a></li>
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/debito-automatico-caixa-tag" target="_blank">Todos erros no Débito Automático</a></li>
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/cartao-de-credito-caixa-tag" target="_blank">Todos erros no Cartão de Crédito</a></li>
+        </ul>
+    </div>
+    <div class="coluna">
+        <ul class="lista-links">
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/validacao-de-seguranca-1" target="_blank">Validação de Segurança PF e PJ</a></li>
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/parcelar-fatura-jv" target="_blank">Contato para Negociação de Débitos</a></li>
+        </ul>
+    </div>
+    <div class="coluna">
+        <ul class="lista-links">
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/solicitar-incluir-ocorrencia-ocorrencia-generica" target="_blank">Abrir ocorrência genérica</a></li>
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/validacao-de-seguranca-1" target="_blank">Informações sobre Substituição</a></li>
+            <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/informacoes-importantes-1" target="_blank">Contato para Negociação de Débitos</a></li>
+                      <li><a href="https://atento.edusense.com.br/semparar/index.php/wiki/nao-consegue-utilizar" target="_blank">Reclamar não consegue utilizar</a></li>
+        </ul>
+    </div>
     <p class="texto2">"O maior erro é supor ao invés de perguntar".</p>
     <p class="texto3">- Albert Einstein</p>
-    <div class="assinatura">Ronny Faustino</div>
-   <div class="assinatura"><a href="https://static.corinthians.com.br/uploads/1608038346421b3ac5c24ee992edd6087611c60dbb.png" target="_blank">Ronny Faustino</a></div>
-
-
-
-</body></html>
+</body>
+</html>
